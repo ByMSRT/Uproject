@@ -12,6 +12,11 @@ public class Character : MonoBehaviour {
     public float runSpeed;
     public float turnSpeed;
 
+    // Variables concernant l'attaque
+    public float attackCooldown;
+    private bool isAttacking;
+    private float currentCooldown;
+
     // Inputs
     public string inputFront;
     public string inputBack;
@@ -59,11 +64,5 @@ public class Character : MonoBehaviour {
         {
             transform.Rotate(0, turnSpeed * Time.deltaTime, 0);
         }
-            //si on saute
-        if (Input.GetKey(inputJump) && Input.GetKey(KeyCode.Space))
-        {
-            transform.Translate(0,0, walkSpeed * Time.deltaTime);
-            animations.Play("BasicMotions@Walk01");
-        } 
     }
 }
