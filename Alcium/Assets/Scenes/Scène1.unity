@@ -474,34 +474,16 @@ Animation:
   m_GameObject: {fileID: 471246402}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400002, guid: 6e2bfa8498b0db840865dd4eb42ce0ad, type: 3}
-  m_Animations: []
+  m_Animation: {fileID: 7400000, guid: 94c75858633b4e04f9e28db3b52b2bba, type: 3}
+  m_Animations:
+  - {fileID: 7400000, guid: 94c75858633b4e04f9e28db3b52b2bba, type: 3}
+  - {fileID: 7400000, guid: a3c7daf5dbba19245938db35245052fa, type: 3}
+  - {fileID: 7400000, guid: e3ce9218d72c10841bbd95cd901792d4, type: 3}
+  - {fileID: 7400000, guid: a7e98d51bd73b0348b47acf6a9f02766, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &471246404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471246402}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c97a8e9123c2040149d6f30dcd70f795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 3
-  runSpeed: 6
-  turnSpeed: 200
-  attackCooldown: 0
-  inputFront: z
-  inputBack: s
-  inputLeft: q
-  inputRight: d
-  inputJump: v
-  jumpSpeed: {x: 1, y: 1, z: 1}
 --- !u!136 &471246405
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1479,7 +1461,7 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: 317a56890b5c8e74ab1d492a2c7fb608, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 75d3a58b3d7879f41926561701407a48, type: 2}
+      objectReference: {fileID: 9100000, guid: 7ff0cf27ed8e9684b9bdd381bab1f846, type: 2}
     - target: {fileID: 9500000, guid: 317a56890b5c8e74ab1d492a2c7fb608, type: 3}
       propertyPath: m_UpdateMode
       value: 0
@@ -1836,7 +1818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1915596952
 Transform:
   m_ObjectHideFlags: 0
@@ -2069,7 +2051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2116695462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
