@@ -53,7 +53,8 @@ public class Character2 : MonoBehaviour {
  
                 if (!isAttacking)
                 {
-                    animations.Play("Unarmed-Strafe-Forward");
+                    //animations.Play("Unarmed-Strafe-Forward");
+                   
                 }
  
                 if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -66,7 +67,7 @@ public class Character2 : MonoBehaviour {
             if (Input.GetKey(inputFront) && Input.GetKey(KeyCode.LeftShift))
             {
                 transform.Translate(0, 0, runSpeed * Time.deltaTime);
-                animations.Play("Unarmed-Run-Forward");
+                //animations.Play("Unarmed-Run-Forward");
             }
  
             // si on recule
@@ -76,7 +77,7 @@ public class Character2 : MonoBehaviour {
  
                 if (!isAttacking)
                 {
-                    animations.Play("Unarmed-Strafe-Backward");
+                    //animations.Play("Unarmed-Strafe-Backward");
                 }
  
                 if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -102,7 +103,7 @@ public class Character2 : MonoBehaviour {
             {
                 if (!isAttacking)
                 {
-                    animations.Play("Unarmed-Idle");
+                    //animations.Play("Unarmed-Idle");
                 }
  
                 if (Input.GetKeyDown(KeyCode.Mouse0))
